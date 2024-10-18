@@ -1,0 +1,376 @@
+.container-fluid-max {
+    max-width: 1920px; /* or whatever maximum width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Custom header background and padding */
+.custom-header {
+    background-color: #e9ecef; /* Light grey background */
+    padding: 20px 0; /* Vertical padding */
+}
+
+/* Customize logo size */
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Header text styling */
+.header-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #041148;
+    padding-left: 15px; /* Spacing between logo and text */
+}
+
+/* Navigation button styles */
+.custom-nav-btn {
+    background-color: #e9ecef; /* Button background color */
+    color: #454545; /* Button text color */
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 10px 20px; /* Button padding */
+    border-radius: 5px;
+    border: none;
+}
+
+.custom-nav-btn:hover {
+    background-color: #041148; /* Darker on hover */
+    color: #fff;
+}
+
+/* Custom subheader background and padding */
+.custom-subheader {
+    background-color: #e9ecef;
+    padding: 15px 0;
+}
+
+/* Subheader text styling */
+.subheader-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8e0303;
+}
+
+/* Search bar styling */
+.custom-search-bar {
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+/* Search button styling */
+.custom-search-btn {
+    background-color: #dae0e5; /* Custom button color */
+    color: #555;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+.custom-search-btn:hover {
+    background-color: #041148;
+    color: #fcfcfc;
+}
+
+
+    .subheader-text {
+        font-size: 2.5rem;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        color: #8e0303; /* Keep the original color or change if needed */
+    }
+
+    .custom-nav-btn, .custom-search-btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+    
+
+    /* Custom navigation box styling */
+.custom-nav-box {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #ddd; /* Border for the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+/* Set background color for the section containing the navigation box */
+/* Full-width background color for the section */
+.custom-bg {
+    background-color: #e9ecef; /* Custom background color */
+    padding: 20px 0; /* Optional: Add top/bottom padding */
+    width: 100%; /* Ensure it takes full width */
+}
+
+/* Optional: Give the container some padding for the content inside */
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 15px;
+}
+
+/* Custom navigation box styling */
+.custom-nav-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-nav-box h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dropdown and checkbox styling */
+.dropdown ul {
+    list-style-type: none;
+    padding: left 0px; ;
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown ul li {
+    padding: 5px 12px;
+    font-family: 'Arial', sans-serif;
+    padding-left: -20px; /* Adjust this value to move items to the left */
+}
+
+.dropdown ul label {
+    font-size: 1rem;
+    color: #555;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    margin-left: -20; /* Ensure no additional margin on the label */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #041148;
+    border-color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+}
+
+.btn-secondary {
+    background-color: #041148;
+    border-color: #ffffff; 
+    font-family: 'Arial', sans-serif;
+}
+
+.dropdown-menu label {
+    padding: 10px;
+}
+
+/* Custom style for the Apply Filters button */
+/* Custom styling extending the Bootstrap dark button */
+.custom-dark-btn {
+    font-size: 1rem; /* Increase font size */
+    font-weight: 600;  /* Bold text */
+    padding: 5px 20px; /* Custom padding */
+    font-family: 'Arial', sans-serif;
+}
+
+.custom-dark-btn:hover {
+    background-color: #343a40; /* Darken the button slightly on hover */
+    border-color: #23272b;     /* Border color change on hover */
+}
+
+/* Optional: Additional custom styling for the Clear Filters button */
+.btn-light {
+    font-size: 1rem;
+    background-color:#dae0e5;
+    font-weight: 600;
+    padding: 5px 20px;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa; /* Slightly darker light grey on hover */
+    border-color: #dae0e5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .custom-nav-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the checkbox */
+.custom-nav-box input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #041148; /* Border color for the checkbox */
+    border-radius: 3px; /* Optional: Rounded corners */
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Style for when the checkbox is checked */
+.custom-nav-box input[type="checkbox"]:checked {
+    background-color: #041148; /* Custom background color when checked */
+    border-color: #041148; /* Ensure the border is the same color */
+}
+
+/* Optional: Add a checkmark when checked */
+.custom-nav-box input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+}
+
+/* Add padding and align items properly */
+.custom-nav-box label {
+    display: flex;
+    align-items: center;
+    padding: 5px 0; /* Add padding around the checkbox and label */
+    font-size: 1rem;
+}
+/* Alternatively, adjust the checkbox position */
+.custom-nav-box input[type="checkbox"] {
+    margin-left: -5; /* Remove or adjust margin for the checkbox itself */
+}
+
+/* Video Card Container */
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure even spacing between cards */
+    gap: px; /* Space between cards */
+}
+
+/* Video Item Styling - Ensures consistent height and alignment */
+.video-item {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Ensure even spacing inside the card */
+    height: 350px; /* Set a fixed height for all video cards */
+    width: 100%; /* Ensures the card width stays consistent */
+    max-width: 300px; /* Set a max width to prevent cards from stretching too wide */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Card Body - Ensure it fills the space evenly */
+.card-body {
+    flex-grow: 1; /* Allows the body to stretch to fill the space */
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Stack title, description, and meta vertically */
+    justify-content: space-between; /* Ensures content is spaced within the card */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1rem;
+    font-weight:500;
+    color: #041148;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px; /* Adds some space after the title */
+}
+
+/* Card Text - For short description */
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px; /* Adds some space after the description */
+}
+
+/* Card Meta - For date and duration */
+.card-meta {
+    font-size: 0.85rem;
+    color: #888;
+    margin-bottom: 10px;
+    text-align: right; /* Aligns the meta info to the right */
+}
+
+/* Play Button - Ensure it stays in the same place */
+.play-button {
+    background-color: #041148;
+    color: #fff;
+    font-size: 0.9rem;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 4px;
+    align-self: flex-start; /* Ensures the button stays at the bottom left */
+    margin-top: auto; /* Pushes the button to the bottom of the card */
+}
+
+.play-button:hover {
+    background-color: #343a40;
+}
+
+/* Modal Video Player */
+.modal-body video,
+.modal-body iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.long-description {
+    font-size: 0.95rem;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 15px;
+}
+
+/* Style for the Modal Title */
+.modal-header .modal-title {
+    font-family: 'Arial', sans-serif; /* Font family */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold font */
+    color:#8e0303; /* Font color */
+    text-transform: uppercase; /* Optional: Transform text to uppercase */
+    letter-spacing: 1px; /* Optional: Adjust letter spacing */
+}
+
+/* Footer Styling */
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #041148;
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+/* Footer Content Alignment */
+.sticky-footer .container {
+    display: flex;
+    justify-content: space-between; /* Space between logo and text */
+    align-items: center; /* Vertically center content */
+}
+
+/* Footer Text Styling */
+.sticky-footer .footer-text {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Footer Logo Styling */
+.sticky-footer .footer-logo img {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Ensure the body has bottom padding so content doesn't overlap the footer */
+body {
+    padding-bottom: 60px; /* Adjust this value based on the height of your footer */
+}
