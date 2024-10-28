@@ -5,7 +5,7 @@
 }
 /* Custom header background and padding */
 .custom-header {
-    background-color: #e9ecef; /* Light grey background */
+    background-color: #EAE7DD; /* Light grey background */
     padding: 20px 0; /* Vertical padding */
 }
 
@@ -43,7 +43,7 @@
 
 /* Custom subheader background and padding */
 .custom-subheader {
-    background-color: #e9ecef;
+    background-color: #EAE7DD;
     padding: 15px 0;
 }
 
@@ -52,7 +52,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
-    color: #8e0303;
+    color: #762d31;
 }
 
 /* Search bar styling */
@@ -78,7 +78,6 @@
     color: #fcfcfc;
 }
 
-
     .subheader-text {
         font-size: 2.5rem;
         font-family: 'Arial', sans-serif;
@@ -91,7 +90,6 @@
         font-size: 0.9rem;
     }
     
-
     /* Custom navigation box styling */
 .custom-nav-box {
     background-color: #f8f9fa; /* Light background color */
@@ -102,7 +100,7 @@
 /* Set background color for the section containing the navigation box */
 /* Full-width background color for the section */
 .custom-bg {
-    background-color: #e9ecef; /* Custom background color */
+    background-color: #EAE7DD; /* Custom background color */
     padding: 20px 0; /* Optional: Add top/bottom padding */
     width: 100%; /* Ensure it takes full width */
 }
@@ -113,9 +111,9 @@
     padding-right: 15px;
 }
 
-/* Custom navigation box styling */
+/* Custom navigation box styling */******************
 .custom-nav-box {
-    background-color: #f8f9fa;
+    background-color:#ccc;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
