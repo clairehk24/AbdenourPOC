@@ -26,7 +26,7 @@
 
 /* Navigation button styles */
 .custom-nav-btn {
-    background-color: #e9ecef; /* Button background color */
+    background-color: #EAE7DD; /* Button background color */
     color: #454545; /* Button text color */
     font-family: 'Arial', sans-serif;
     font-size: 1rem;
@@ -65,7 +65,7 @@
 
 /* Search button styling */
 .custom-search-btn {
-    background-color: #dae0e5; /* Custom button color */
+    background-color: #EAE7DD; /* Custom button color */
     color: #555;
     font-weight: 600;
     padding: 10px 20px;
