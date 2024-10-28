@@ -20,7 +20,8 @@
     font-family: 'Arial', sans-serif;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #041148;
+    font-size: 2rem;
+    color: #2A4D7A;
     padding-left: 15px; /* Spacing between logo and text */
 }
 
@@ -37,7 +38,7 @@
 }
 
 .custom-nav-btn:hover {
-    background-color: #041148; /* Darker on hover */
+    background-color: #2A4D7A; /* Darker on hover */
     color: #fff;
 }
 
@@ -66,7 +67,8 @@
 /* Search button styling */
 .custom-search-btn {
     background-color: #EAE7DD; /* Custom button color */
-    color: #555;
+    color: #454545;
+    font-family: 'Arial', sans-serif;
     font-weight: 600;
     padding: 10px 20px;
     border: none;
@@ -74,7 +76,7 @@
 }
 
 .custom-search-btn:hover {
-    background-color: #041148;
+    background-color: #2A4D7A;
     color: #fcfcfc;
 }
 
@@ -149,13 +151,13 @@
 
 /* Buttons */
 .btn-primary {
-    background-color: #041148;
+    background-color: #2A4D7A;
     border-color: #ffffff; 
     font-family: 'Arial', sans-serif;
 }
 
 .btn-secondary {
-    background-color: #041148;
+    background-color: #2A4D7A;
     border-color: #ffffff; 
     font-family: 'Arial', sans-serif;
 }
@@ -205,7 +207,7 @@
     appearance: none;
     width: 16px;
     height: 16px;
-    border: 2px solid #041148; /* Border color for the checkbox */
+    border: 2px solid #2A4D7A; /* Border color for the checkbox */
     border-radius: 3px; /* Optional: Rounded corners */
     position: relative;
     margin-right: 10px;
@@ -213,8 +215,8 @@
 
 /* Style for when the checkbox is checked */
 .custom-nav-box input[type="checkbox"]:checked {
-    background-color: #041148; /* Custom background color when checked */
-    border-color: #041148; /* Ensure the border is the same color */
+    background-color: #2A4D7A; /* Custom background color when checked */
+    border-color: #2A4D7A; /* Ensure the border is the same color */
 }
 
 /* Optional: Add a checkmark when checked */
@@ -274,7 +276,7 @@
 .card-title {
     font-size: 1rem;
     font-weight:500;
-    color: #041148;
+    color: #2A4D7A;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 10px; /* Adds some space after the title */
 }
@@ -297,7 +299,7 @@
 
 /* Play Button - Ensure it stays in the same place */
 .play-button {
-    background-color: #041148;
+    background-color: #2A4D7A;
     color: #fff;
     font-size: 0.9rem;
     border: none;
@@ -341,7 +343,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #041148;
+    background-color: #2A4D7A;
     color: white;
     padding: 10px 0;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -372,3 +374,4 @@
 body {
     padding-bottom: 60px; /* Adjust this value based on the height of your footer */
 }
+
