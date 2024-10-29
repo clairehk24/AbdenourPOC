@@ -1,3 +1,9 @@
+html, body {
+  background-color: #eae7dd;
+  margin: 0; /* Ensure no default margins */
+  padding: 0;
+}
+
 .container-fluid-max {
   max-width: 1920px; /* or whatever maximum width you prefer */
   margin-left: auto;
