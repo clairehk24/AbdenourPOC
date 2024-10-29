@@ -1,20 +1,20 @@
 // Apply Filters Button Functionality
-document.getElementById('apply-filters').addEventListener('click', function() {
+document.getElementById('apply-filters').addEventListener('click', function () {
     const selectedFilters = {
         Topic: [],
         CAATEStandard: [],
         PracticeAreas: [],
         date: [],
         BodyRegion: [] // Added BodyRegion filter
-    }; 
+    };
 
-    document.querySelectorAll('.filter:checked').forEach(function(checkbox) {
+    document.querySelectorAll('.filter:checked').forEach(function (checkbox) {
         const filterType = checkbox.getAttribute('data-filter');
         selectedFilters[filterType].push(checkbox.value);
     });
 
     // Filter videos
-    document.querySelectorAll('.video-item').forEach(function(video) {
+    document.querySelectorAll('.video-item').forEach(function (video) {
         const videoTopic = video.getAttribute('data-Topic');
         const videoCAATEStandard = video.getAttribute('data-CAATEStandard');
         const videoPracticeAreas = video.getAttribute('data-PracticeAreas');
@@ -36,22 +36,22 @@ document.getElementById('apply-filters').addEventListener('click', function() {
 });
 
 // Clear Filters Button Functionality
-document.getElementById('clear-filters').addEventListener('click', function() {
-    document.querySelectorAll('.filter').forEach(function(checkbox) {
+document.getElementById('clear-filters').addEventListener('click', function () {
+    document.querySelectorAll('.filter').forEach(function (checkbox) {
         checkbox.checked = false;  // Uncheck all checkboxes
     });
 
     // Show all videos after clearing filters
-    document.querySelectorAll('.video-item').forEach(function(video) {
+    document.querySelectorAll('.video-item').forEach(function (video) {
         video.style.display = 'block';
     });
 });
 
-document.getElementById('sortNewest').addEventListener('click', function() {
+document.getElementById('sortNewest').addEventListener('click', function () {
     sortVideos('newest');
 });
 
-document.getElementById('sortOldest').addEventListener('click', function() {
+document.getElementById('sortOldest').addEventListener('click', function () {
     sortVideos('oldest');
 });
 
@@ -69,7 +69,7 @@ function sortVideos(order) {
     };
 
     // Sort the videos based on their data-date attribute (short text)
-    videos.sort(function(a, b) {
+    videos.sort(function (a, b) {
         const dateA = dateRank[a.getAttribute('data-date').toLowerCase()];
         const dateB = dateRank[b.getAttribute('data-date').toLowerCase()];
 
@@ -81,7 +81,9 @@ function sortVideos(order) {
     });
 
     // Re-arrange the videos in the DOM
-    videos.forEach(function(video) {
+    videos.forEach(function (video) {
         videoContainer.appendChild(video); // Moves the videos in sorted order
     });
 }
+
+
