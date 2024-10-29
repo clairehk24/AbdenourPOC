@@ -3,8 +3,9 @@ document.getElementById('apply-filters').addEventListener('click', function() {
     const selectedFilters = {
         Topic: [],
         CAATEStandard: [],
-        Filter3Placeholder: [],
-        date: []
+        PracticeAreas: [],
+        date: [],
+        BodyRegion: [] // Added BodyRegion filter
     }; 
 
     document.querySelectorAll('.filter:checked').forEach(function(checkbox) {
@@ -16,15 +17,17 @@ document.getElementById('apply-filters').addEventListener('click', function() {
     document.querySelectorAll('.video-item').forEach(function(video) {
         const videoTopic = video.getAttribute('data-Topic');
         const videoCAATEStandard = video.getAttribute('data-CAATEStandard');
-        const videoFilter3Placeholder = video.getAttribute('data-Filter3Placeholder');
+        const videoPracticeAreas = video.getAttribute('data-PracticeAreas');
         const videoDate = video.getAttribute('data-date');
+        const videoBodyRegion = video.getAttribute('data-BodyRegion'); // Added attribute for BodyRegion
 
         const matchesTopic = selectedFilters.Topic.length === 0 || selectedFilters.Topic.includes(videoTopic);
         const matchesCAATEStandard = selectedFilters.CAATEStandard.length === 0 || selectedFilters.CAATEStandard.includes(videoCAATEStandard);
-        const matchesFilter3Placeholder = selectedFilters.Filter3Placeholder.length === 0 || selectedFilters.Filter3Placeholder.includes(videoFilter3Placeholder);
+        const matchesPracticeAreas = selectedFilters.PracticeAreas.length === 0 || selectedFilters.PracticeAreas.includes(videoPracticeAreas);
         const matchesDate = selectedFilters.date.length === 0 || selectedFilters.date.includes(videoDate);
+        const matchesBodyRegion = selectedFilters.BodyRegion.length === 0 || selectedFilters.BodyRegion.includes(videoBodyRegion); // New filter condition
 
-        if (matchesTopic && matchesCAATEStandard && matchesFilter3Placeholder && matchesDate) {
+        if (matchesTopic && matchesCAATEStandard && matchesPracticeAreas && matchesDate && matchesBodyRegion) {
             video.style.display = 'block';  // Show matching video
         } else {
             video.style.display = 'none';   // Hide non-matching video
@@ -43,6 +46,7 @@ document.getElementById('clear-filters').addEventListener('click', function() {
         video.style.display = 'block';
     });
 });
+
 document.getElementById('sortNewest').addEventListener('click', function() {
     sortVideos('newest');
 });

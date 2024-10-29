@@ -69,9 +69,9 @@
                                 Topic
                             </button>
                             <ul id="TopicDropdown" class="collapse show">
-                                <li><label><input type="checkbox" class="filter" value="TheDailyInjuryReport" data-filter="Topic">The Daily Injury Report</label></li>
-                                <li><label><input type="checkbox" class="filter" value="PackingforaTrip" data-filter="Topic">Packing for a Trip</label></li>
-                                <li><label><input type="checkbox" class="filter" value="LongCOVID" data-filter="Topic">Long COVID</label></li>
+                                <li><label><input type="checkbox" class="filter" value="ACL" data-filter="Topic">ACL</label></li>
+                                <li><label><input type="checkbox" class="filter" value="Post-operative" data-filter="Topic">Post-operative</label></li>
+                                <li><label><input type="checkbox" class="filter" value="DEI" data-filter="Topic">Diversity, equity, and inclusion</label></li>
                                 <li><label><input type="checkbox" class="filter" value="PelvicFloor" data-filter="Topic">Pelvic Floor</label></li>
                                 <li><label><input type="checkbox" class="filter" value="TopicsContPlaceholder" data-filter="Topic">Topics cont. Placeholder</label></li>
                             </ul>
@@ -83,29 +83,39 @@
                                 CAATE Standard
                             </button>
                             <ul id="CAATEStandardDropdown" class="collapse show">
-                                <li><label><input type="checkbox" class="filter" value="17" data-filter="CAATEStandard">17 - Varied Pt. Populations</label></li>
-                                <li><label><input type="checkbox" class="filter" value="18" data-filter="CAATEStandard">18 - Varied Health Conditions</label></li>
-                                <li><label><input type="checkbox" class="filter" value="24" data-filter="CAATEStandard">24 - Prospective student program information</label></li>
-                                <li><label><input type="checkbox" class="filter" value="29" data-filter="CAATEStandard">29 - Student Orientation at Clinical Site</label></li>
-                                <li><label><input type="checkbox" class="filter" value="CAATEContPlaceholder" data-filter="CAATEStandard">CAATE Standards Cont. Placeholder</label></li>
+                                <li><label><input type="checkbox" class="filter" value="17" data-filter="CAATEStandard">17</label></li>
+                                <li><label><input type="checkbox" class="filter" value="18" data-filter="CAATEStandard">18</label></li>
+                                <li><label><input type="checkbox" class="filter" value="24" data-filter="CAATEStandard">24</label></li>
+                                <li><label><input type="checkbox" class="filter" value="29" data-filter="CAATEStandard">29</label></li>
+                                <li><label><input type="checkbox" class="filter" value="CAATEContPlaceholder" data-filter="CAATEStandard">Placeholder</label></li>
                             </ul>
                         </div>
     
                         <!-- Dropdown 3: Filter3Placeholder -->
                         <div class="dropdown">
-                            <button class="btn btn-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#Filter3PlaceholderDropdown" aria-expanded="false">
-                                Filter Three Placeholder
+                            <button class="btn btn-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#PracticeAreasDropdown" aria-expanded="false">
+                                Practice Areas
                             </button>
-                            <ul id="Filter3PlaceholderDropdown" class="collapse show">
-                                <li><label><input type="checkbox" class="filter" value="Placeholder 1" data-filter="Filter3Placeholder">Filter 1</label></li>
-                                <li><label><input type="checkbox" class="filter" value="Placeholder 2" data-filter="Filter3Placeholder">Filter 2</label></li>
-                                <li><label><input type="checkbox" class="filter" value="Placeholder 3" data-filter="Filter3Placeholder">Filter 3</label></li>
-                                <li><label><input type="checkbox" class="filter" value="Placeholder 4" data-filter="Filter3Placeholder">Filter 4</label></li>
-                                <li><label><input type="checkbox" class="filter" value="Placeholder 5" data-filter="Filter3Placeholder">Filter 5</label></li>
+                            <ul id="PracticeAreasDropdown" class="collapse show">
+                                <li><label><input type="checkbox" class="filter" value="Inpatient" data-filter="PracticeAreas">Inpatient</label></li>
+                                <li><label><input type="checkbox" class="filter" value="Outpatient" data-filter="PracticeAreas">Outpatient</label></li>
+                                <li><label><input type="checkbox" class="filter" value="Military" data-filter="PracticeAreas">Military</label></li>
+                                <li><label><input type="checkbox" class="filter" value="Secondary School" data-filter="PracticeAreas">Secondary School</label></li>
+                            </ul>
+                        </div>
+                        <!-- Dropdown 4: Body Region -->
+                        <div class="dropdown">
+                            <button class="btn btn-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#BodyRegionDropdown" aria-expanded="false">
+                                Body Region
+                            </button>
+                            <ul id="BodyRegionDropdown" class="collapse show">
+                                <li><label><input type="checkbox" class="filter" value="UpperExtremity" data-filter="BodyRegion">Upper Extremity</label></li>
+                                <li><label><input type="checkbox" class="filter" value="LowerExtremity" data-filter="BodyRegion">Lower Extremity</label></li>
+                                <li><label><input type="checkbox" class="filter" value="Spine" data-filter="BodyRegion">Spine</label></li>
                             </ul>
                         </div>
     
-                        <!-- Dropdown 4: Upload Date -->
+                        <!-- Dropdown 5: Upload Date -->
                         <div class="dropdown">
                             <button class="btn btn-secondary w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#dateDropdown" aria-expanded="false">
                                 Upload Date
@@ -142,7 +152,7 @@
                     <div class="row video-list">
                         <!-- Video Card 1 -->
                         <div class="col-md-4 mb-4">
-                            <div class="card video-item" data-Topic="TheDailyInjuryReport" data-CAATEStandard="17" data-Filter3Placeholder="Placeholder 1" data-date="week">
+                            <div class="card video-item" data-Topic="TheDailyInjuryReport" data-CAATEStandard="17" data-PracticeAreas="Inpatient" data-date="week" data-BodyRegion="UpperExtremity">
                                 <img src="images/videothumbnail.jpg" class="card-img-top" alt="Video Thumbnail">
                                 <div class="card-body">
                                     <h5 class="card-title">Presented by Brian Richey,BS, MES, MEPD</h5>
@@ -156,7 +166,7 @@
                 
                         <!-- Video Card 2 -->
                         <div class="col-md-4 mb-4">
-                            <div class="card video-item" data-Topic="PackingforaTrip" data-CAATEStandard="24" data-Filter3Placeholder="Placeholder 2" data-date="month">
+                            <div class="card video-item" data-Topic="PackingforaTrip" data-CAATEStandard="24" data-PracticeAreas="Outpatient" data-date="month" data-BodyRegion="LowerExtremity">
                                 <img src="images/videothumbnail2.jpg" class="card-img-top" alt="Video Thumbnail">
                                 <div class="card-body">
                                     <h5 class="card-title">Presented by Laurin Conlin, MS</h5>
@@ -170,10 +180,11 @@
                 
                         <!-- Video Card 3 -->
                         <div class="col-md-4 mb-4">
-                            <div class="card video-item" data-Topic="LongCOVID" data-CAATEStandard="18" data-Filter3Placeholder="Placeholder 3" data-date="24hours">
+                            <div class="card video-item" data-Topic="LongCOVID" data-CAATEStandard="18" data-PracticeAreas="Military" data-date="24hours"data-BodyRegion="Spine">
                                 <img src="path/to/thumbnail3.jpg" class="card-img-top" alt="Video Thumbnail">
                                 <div class="card-body">
-                                    <h5 class="card-title">Movies Video 3</h5>                                    <p class="card-meta">
+                                    <h5 class="card-title">Movies Video 3</h5>                                    
+                                    <p class="card-meta">
                                         Uploaded: Last 24 Hours | <span>Duration: 20 mins</span>
                                     </p>
                                     <button type="button" class="btn btn-primary play-button" data-bs-toggle="modal" data-bs-target="#videoModal3">Play</button>
@@ -206,6 +217,7 @@
                                     </div>
                                 </div>
                                 <p class="long-description mt-3">This is a longer description for placeholder.</p>
+                                <p class="tags-placeholder mt-2"><strong>Tags:</strong> Tag1, Tag2, Tag3</p>
                                 <div class="mt-4">
                                     <!-- Button 1: Link to Word Document -->
                                     <a href="files/Downloaded Word Placeholder.docx" class="btn btn-outline-secondary" target="_blank">
@@ -248,6 +260,7 @@
                                     </div>
                                 </div>
                                 <p class="long-description mt-3">This is a longer description for placeholder.</p>
+                                <p class="tags-placeholder mt-2"><strong>Tags:</strong> Tag1, Tag2, Tag3</p>
                                 <div class="mt-4">
                                     <!-- Button 1: Link to Word Document -->
                                     <a href="files/Downloaded Word Placeholder.docx" class="btn btn-outline-secondary" target="_blank">
@@ -290,6 +303,7 @@
                                     </div>
                                 </div>
                                 <p class="long-description mt-3">This is a longer description for placeholder.</p>
+                                <p class="tags-placeholder mt-2"><strong>Tags:</strong> Tag1, Tag2, Tag3</p>
                                 <div class="mt-4">
                                     <!-- Button 1: Link to Word Document -->
                                     <a href="files/Downloaded Word Placeholder.docx" class="btn btn-outline-secondary" target="_blank">
@@ -317,17 +331,21 @@
 
     <footer class="sticky-footer">
         <div class="container d-flex justify-content-between align-items-center">
-            <!-- Logo and Copyright on the left -->
+            <!-- Logo  on the left -->
             <div class="footer-logo d-flex align-items-center">
                 <a href="https://us.humankinetics.com/" target="_blank"> <!-- Link to the website -->
                     <img src="images/HK logo horizontal 4C white text.png" alt="Logo" style="height: 40px;">
                 </a>
-                <p class="mb-0 ms-2">© 2024 Human Kinetics</p> <!-- Copyright symbol and text -->
             </div>
             
-            <!-- Text placeholder in the center -->
-            <div class="footer-text">
+            <!-- Centered text -->
+            <div class="footer-center-text text-center">
                 <p class="mb-0">Special Topics in Sports Medicine</p>
+             </div>
+        
+            <!-- Right-aligned copyright text -->
+            <div class="footer-right-text">
+                <p class="mb-0">© 2024 Human Kinetics</p>
             </div>
         </div>
     </footer>
