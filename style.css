@@ -13,12 +13,30 @@ html, body {
 .custom-header {
   background-color: #eae7dd; /* Light grey background */
   padding: 20px 0; /* Vertical padding */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+.custom-header .nav {
+  display: flex;
+  gap: 10px; /* Adjust spacing between buttons */
+}
+.custom-header .logo {
+  margin-right: 15px; /* Spacing between logo and navigation */
+}
+
 
 /* Customize logo size */
 .logo {
   height: 50px;
   width: auto;
+}
+
+.custom-header form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  max-width: 600px; /* Restrict the form’s size, if necessary */
 }
 
 /* Header text styling */
@@ -62,13 +80,6 @@ html, body {
   color: #454545;
 }
 
-/* Search bar styling */
-.custom-search-bar {
-  border-radius: 4px;
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-}
 
 /* Search button styling */
 .custom-search-btn {
@@ -96,7 +107,7 @@ html, body {
 .custom-nav-btn,
 .custom-search-btn {
   padding: 8px 15px;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Custom navigation box styling */

@@ -16,44 +16,36 @@
 <body>
     <header class="custom-header">
         <div class="container-fluid container-fluid-max px-5">
-            <div class="row align-items-center">
+            <div class="d-flex align-items-center justify-content-between">
                 <!-- Logo on the left -->
-                <div class="col-auto">
+                <div class="logo-container">
                     <img src="images/HK logo horizontal stacked 4C.png" alt="Logo" class="logo">
                 </div>
 
-                <!-- Header text beside the logo -->
-                <div class="col">
-                    <h1 class="header-text mb-0">Special Topics in Sports Medicine</h1>
-                </div>
+                <!-- Navigation buttons next to the logo -->
+                <nav class="nav ms-3">
+                    <a href="index.html" class="btn custom-nav-btn mx-1">Home</a>
+                    <a href="about.html" class="btn custom-nav-btn mx-1">About</a>
+                    <a href="Resources.html" class="btn custom-nav-btn mx-1">Free Resources</a>
+                </nav>
 
-                <!-- Navigation buttons on the right -->
-                <div class="col-auto">
-                    <nav class="nav">
-                        <a href="index.html" class="btn custom-nav-btn mx-1">Home</a>
-                        <a href="about.html" class="btn custom-nav-btn mx-1">About</a>
-                        <a href="free-resources.html" class="btn custom-nav-btn mx-1">Free Resources</a>
-                    </nav>
-                </div>
+                <!-- Search bar with button on the right -->
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2 custom-search-bar" type="search" placeholder="Search Resources"
+                        aria-label="Search">
+                    <button class="btn custom-search-btn" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </header>
-    <!-- Secondary Header with Search Bar -->
+
+    <!-- Secondary Header -->
     <section class="custom-subheader">
         <div class="container-fluid container-fluid-max px-5">
             <div class="row align-items-center">
                 <!-- Header text on the left -->
                 <div class="col-md-6">
                     <h2 class="subheader-text mb-0">Free Resources</h2>
-                </div>
-
-                <!-- Search bar with button on the right -->
-                <div class="col-md-6">
-                    <form class="d-flex justify-content-end">
-                        <input class="form-control me-2 custom-search-bar" type="search" placeholder="Search Resources"
-                            aria-label="Search">
-                        <button class="btn custom-search-btn" type="submit">Search</button>
-                    </form>
                 </div>
             </div>
         </div>
