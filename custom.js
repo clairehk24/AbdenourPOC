@@ -86,20 +86,13 @@ function sortVideos(order) {
   });
 }
 
-// Utility function to reset iframe src
-function resetIframe(modalId, iframeId) {
-  var modal = document.getElementById(modalId);
-  var iframe = document.getElementById(iframeId);
-  if (modal && iframe) {
-    modal.addEventListener('hidden.bs.modal', function () {
-      // Save and reset src to stop the video
-      var src = iframe.src;
-      iframe.src = src;
-    });
-  }
-}
-
-// Apply to each modal/iframe pair
-resetIframe('videoModal1', 'video1-iframe');
-resetIframe('videoModal2', 'video2-iframe');
-resetIframe('videoModal3', 'video3-iframe');
+// 1) Stop any iframe videos when the modal closes
+document.querySelectorAll(".modal").forEach(modal => {
+  modal.addEventListener("hidden.bs.modal", () => {
+    const iframe = modal.querySelector("iframe");
+    if (iframe) {
+      // reload src to force stop
+      iframe.src = iframe.src;
+    }
+  });
+});
