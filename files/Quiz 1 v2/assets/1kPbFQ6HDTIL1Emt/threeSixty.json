@@ -1,0 +1,32 @@
+{
+  "version": "3.91.33016.0",
+  "course_id": "66sIuajl5r4",
+  "title": "Bauer Storyline Certificate",
+  "thumbnail": "story_content/thumbnail.jpg",
+  "scenes": [
+    {
+      "title": "Untitled Scene"
+    }
+  ],
+  "slides": [
+    {
+      "id": "5kXfaYOivzS",
+      "title": "Type Name",
+      "scene_index": "1.1"
+    },
+    {
+      "id": "5ieu0uem1G1",
+      "title": "Certificate",
+      "scene_index": "1.2"
+    }
+  ],
+  "player": {
+    "name": "unified",
+    "width": 783,
+    "height": 611
+  },
+  "stage": {
+    "width": 763,
+    "height": 540
+  }
+}

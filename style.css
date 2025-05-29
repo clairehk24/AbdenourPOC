@@ -116,6 +116,9 @@ html, body {
   border: 1px solid #ddd; /* Border for the box */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  width: 90%; /* Adjust this value as needed */
+  max-width: 300px; /* Optional: Maximum width */
+  align-items: center; /* Vertically center content */
 }
 /* Set background color for the section containing the navigation box */
 /* Full-width background color for the section */
@@ -136,11 +139,11 @@ html, body {
   background-color: #fcfcfc;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px px rgba(0, 0, 0, 0.1);
 }
 
 .custom-nav-box h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
   margin-bottom: 15px;
   font-family: "Arial", sans-serif;
@@ -155,14 +158,14 @@ html, body {
 }
 
 .dropdown ul li {
-  padding: 2px 12px;
+  padding: 1px;
   font-family: "Arial", sans-serif;
   padding-left: -20px; /* Adjust this value to move items to the left */
   padding-bottom: 0px;
 }
 
 .dropdown ul label {
-  font-size: 1rem;
+  font-size: .9rem;
   color: #555;
   cursor: pointer;
   font-family: "Arial", sans-serif;
@@ -257,7 +260,7 @@ html, body {
 }
 /* Alternatively, adjust the checkbox position */
 .custom-nav-box input[type="checkbox"] {
-  margin-left: -5; /* Remove or adjust margin for the checkbox itself */
+  margin-left: -5px; /* Remove or adjust margin for the checkbox itself */
 }
 
 /* Video Card Container */
