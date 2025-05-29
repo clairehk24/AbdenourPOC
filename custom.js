@@ -86,13 +86,21 @@ function sortVideos(order) {
   });
 }
 
-// 1) Stop any iframe videos when the modal closes
-document.querySelectorAll(".modal").forEach(modal => {
-  modal.addEventListener("hidden.bs.modal", () => {
-    const iframe = modal.querySelector("iframe");
-    if (iframe) {
-      // reload src to force stop
-      iframe.src = iframe.src;
-    }
+// ==========================
+// Stop all iframe/videos in modal on close
+// ==========================
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".modal").forEach(function (modal) {
+    modal.addEventListener("hidden.bs.modal", function () {
+      // Stop all embedded iframes (YouTube, Brightcove, Vimeo, etc.)
+      modal.querySelectorAll("iframe").forEach(function (iframe) {
+        iframe.src = iframe.src;
+      });
+      // Stop all HTML5 <video> tags (if any)
+      modal.querySelectorAll("video").forEach(function (video) {
+        video.pause();
+        video.currentTime = 0;
+      });
+    });
   });
 });
